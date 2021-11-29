@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function(){
     return view('welcome');
+});
+
+
+Route::get('/index1', function(){
+    return view('pages.index1');
+});
+
+Route::get('/index2', function(){
+    return view('pages.index2');
 });
